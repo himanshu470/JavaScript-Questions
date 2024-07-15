@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>JavaScript Programs</title>
+</head>
+<body>
+    <h1>JavaScript Programs</h1>
+
+    <p>Q2. Click the button to print the current page.</p>
+    <form> 
+        <input type="button" value="Print" onclick="print_current_page()" /> 
+    </form>
+    <p> 10. Write a JavaScript program to calculate multiplication and division of two numbers (input from user).</p>
+    <h3>Choose an operation:</h3>
+    <form>
+        1st Number: <input type="text" id="firstNumber" /><br>
+        2nd Number: <input type="text" id="secondNumber" /><br>
+        <input type="radio" name="operation" value="multiply" id="multiplyRadio">
+        <label for="multiplyRadio">Multiply</label>
+        <input type="radio" name="operation" value="divide" id="divideRadio">
+        <label for="divideRadio">Divide</label>
+        <input type="button" onClick="performOperation()" value="Calculate" />
+    </form>
+    <p>The Result is: <br><span id="result"></span></p>
+    <script src="app.js"></script>
+</body>
+</html>
